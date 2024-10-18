@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golden Crown Real-Estate Co.</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link rel="stylesheet" href="css/style2.css" type="text/css" />
+    <script src="js/script1.js" defer></script>
+    <script src="js/script2.js" defer></script>
+  </head>
+
+  <header>
+    <div class="language-selector">
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English (Default)</option>
+        <option value="tl">Filipino (Philippines)</option>
+        <option value="jp">Japanese (Japan)</option>
+        <option value="kr">Korean (South Korea)</option>
+        <option value="ar">Arabic (Saudi Arabia)</option>
+        <option value="th">Thai (Thailand)</option>
+        <option value="fr">French (France, Switzerland)</option>
+        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+        <option value="it">Italian (Italy)</option>
+        <option value="en-gb">English (UK: London, Edinburgh)</option>
+        <option value="en-us">
+          English (USA: California, Florida, Washington D.C., New York)
+        </option>
+        <option value="fr-ca">French (Canada)</option>
+      </select>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.htm" data-translate="home">HOME</a></li>
+        |
+        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+        |
+        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+        |
+        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+        |
+        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <button id="back-button" onclick="goBack()">← Back</button>
+  </header>
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>House Types</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="script.js" defer></script>
+    </head>
+
+    <body>
+      <main class="the-housetypes">
+        <h2>House Types</h2>
+        <div class="asian-housetypes" id="asian-housetypes">
+          <div>
+            <h3>Philippines</h3>
+            <ul>
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Philippines', 'cabin');"
+                  ><img src="website2 elements/cabin.png" alt=""
+                /></a>
+                <p class="text-overlay">View Cabin Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Philippines', 'cottage');"
+                  ><img src="website2 elements/cottage.jpg" alt=""
+                /></a>
+                <p class="text-overlay">View Cottage Style Houses</p>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Philippines', 'modern');"
+                  ><img src="website2 elements/modern.png" alt=""
+                /></a>
+                <p class="text-overlay">View Modern Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Philippines', 'victorian');"
+                  ><img src="website2 elements/victorian.png" alt=""
+                /></a>
+                <p class="text-overlay">View Victorian Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Philippines', 'split-level');"
+                  ><img src="website2 elements/split level.png" alt=""
+                /></a>
+                <p class="text-overlay">View Split Level Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Thailand</h3>
+            <ul>
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Thailand', 'cabin');"
+                  ><img src="website2 elements/cabin.png" alt=""
+                /></a>
+                <p class="text-overlay">View Cabin Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Thailand', 'cottage');"
+                  ><img src="website2 elements/cottage.jpg" alt=""
+                /></a>
+                <p class="text-overlay">View Cottage Style Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Thailand', 'modern');"
+                  ><img src="website2 elements/modern.png" alt=""
+                /></a>
+                <p class="text-overlay">View Modern Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Thailand', 'victorian');"
+                  ><img src="website2 elements/victorian.png" alt=""
+                /></a>
+                <p class="text-overlay">View Victorian Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Thailand', 'split-level');"
+                  ><img src="website2 elements/split level.png" alt=""
+                /></a>
+                <p class="text-overlay">View Split Level Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="europe-housetypes" id="europe-housetypes">
+          <div>
+            <h3>United Kingdom (Edinburgh)</h3>
+            <ul>
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', 'cabin');"
+                  ><img src="website2 elements/cabin.png" alt=""
+                /></a>
+                <p class="text-overlay">View Cabin Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', 'cottage');"
+                  ><img src="website2 elements/cottage.jpg" alt=""
+                /></a>
+                <p class="text-overlay">View Cottage Style Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', 'modern');"
+                  ><img src="website2 elements/modern.png" alt=""
+                /></a>
+                <p class="text-overlay">View Modern Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', 'victorian');"
+                  ><img src="website2 elements/victorian.png" alt=""
+                /></a>
+                <p class="text-overlay">View Victorian Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', 'split-level');"
+                  ><img src="website2 elements/split level.png" alt=""
+                /></a>
+                <p class="text-overlay">View Split Level Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Spain</h3>
+            <ul>
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Spain', 'cabin');"
+                  ><img src="website2 elements/cabin.png" alt=""
+                /></a>
+                <p class="text-overlay">View Cabin Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="houseexterior.htm"
+                  onclick="setSelectedCountryAndHouseType('Spain', 'cottage');"
+                  ><img src="website2 elements/cottage.jpg" alt=""
+                /></a>
+                <p class="text-overlay">View Cottage Style Houses</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Spain', 'modern');"
+                  ><img src="website2 elements/modern.png" alt=""
+                /></a>
+                <p class="text-overlay">View Modern Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Spain', 'victorian');"
+                  ><img src="website2 elements/victorian.png" alt=""
+                /></a>
+                <p class="text-overlay">View Victorian Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  onclick="setSelectedCountryAndHouseType('Spain', 'split-level');"
+                  ><img src="website2 elements/split level.png" alt=""
+                /></a>
+                <p class="text-overlay">View Split Level Houses</p>
+                <p id="soon">SOON</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </body>
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/share/4icqxLeV1SAVbjSh/"
+            target="_blank"
+            ><img src="website2 elements/Facebook.png" alt="Facebook"
+          /></a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.instagram.com/furr_eli/profilecard/?igsh=MW92NXVha2ZwYjVvbw=="
+            target="_blank"
+            ><img src="website2 elements/Instagram.png" alt="Instagram"
+          /></a>
+        </li>
+
+        <li>
+          <a
+            href="Take a look at Rosè 💗💗 (@Jade____Queen): https://x.com/Jade____Queen?t=DzPx8xV1JGPBlZ6lRhJv5Q&s=07"
+            target="_blank"
+            ><img src="website2 elements/X.png" alt="X"
+          /></a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank"
+            ><img src="website2 elements/LinkedIn.png" alt="LinkedIn"
+          /></a>
+        </li>
+
+        <li><a href="term.htm" target="_blank">Terms of Services</a></li>
+        <li><a href="privacy.htm" target="_blank">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">
+        Copyright &#169; 2024 Golden Crown Real-Estate Co. & Gania, Elisha
+        Claire A. All rights reserved.
+      </p>
+    </footer>
+  </html>
+</html>

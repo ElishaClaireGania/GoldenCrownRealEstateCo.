@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golden Crown Real-Estate Co.</title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <script src="js/script1.js"></script>
+  </head>
+
+  <header>
+    <div class="language-selector">
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English (Default)</option>
+        <option value="tl">Filipino (Philippines)</option>
+        <option value="jp">Japanese (Japan)</option>
+        <option value="kr">Korean (South Korea)</option>
+        <option value="ar">Arabic (Saudi Arabia)</option>
+        <option value="th">Thai (Thailand)</option>
+        <option value="fr">French (France, Switzerland)</option>
+        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+        <option value="it">Italian (Italy)</option>
+        <option value="en-gb">English (UK: London, Edinburgh)</option>
+        <option value="en-us">
+          English (USA: California, Florida, Washington D.C., New York)
+        </option>
+        <option value="fr-ca">French (Canada)</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.htm" data-translate="home">HOME</a></li>
+        |
+        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+        |
+        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+        |
+        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+        |
+        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main class="location">
+      <section class="main-office">
+        <h3 class="heading">Main Office</h3>
+        <p>Tarlac, Philippines</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123046.94835864828!2d120.53060483307311!3d15.472748265176131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c63f4ab68e0d%3A0x13f9415d7a5bfd4b!2sTarlac%20City%2C%20Tarlac!5e0!3m2!1sen!2sph!4v1729117832020!5m2!1sen!2sph"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="international-offices">
+        <h3 class="heading">International Offices</h3>
+        <div class="office-grid">
+          <div class="office-card">
+            <h4>Japan</h4>
+            <p>1-3-1 Shibakoen, Minato, Tokyo, Japan</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.6704371553!2d138.45030894162414!3d35.50429414474782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sph!4v1729117938385!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>South Korea</h4>
+            <p>300 Olympic-daero, Songpa-gu, Seoul, South Korea</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.91416565052!2d126.8093269638541!3d37.56503371548927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sph!4v1729163959198!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Thailand</h4>
+            <p>114 Narathiwat Ratchanakarin Road, Yannawa, Bangkok Thailand</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496114.0486526634!2d100.30343593721963!3d13.725048156080046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok%2C%20Thailand!5e0!3m2!1sen!2sph!4v1729117980841!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Saudi Arabia</h4>
+            <p>89-9 King Abdulaziz Road, Riyadh, Saudi Arabia</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0365620978!2d46.16302662013916!3d24.724997813412568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sph!4v1729118074467!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>France</h4>
+            <p>75015 Avenue du Maine, Paris, France</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.7782445984!2d2.264633879507511!3d48.8589384352915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sph!4v1729118112794!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Spain</h4>
+            <p>28013 Gran Vía 2, Madrid, Spain</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47826781045!2d-3.8443483207561773!3d40.438098611101395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sph!4v1729118134593!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Italy</h4>
+            <p>00185 Torre Garibaldi, Piazza della Repubblica, Roma, Italy</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760818.7447920932!2d11.855471830593535!3d41.85094127962288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a111bd74ac3%3A0x3094f9ab2388100!2sMetropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2sph!4v1729118324367!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Switzerland</h4>
+            <p>Hardstrasse 8004, Zürich, Switzerland</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86456.44144621436!2d8.454334279354253!3d47.37752842349598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZ%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sph!4v1729118347951!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>United Kingdom (London)</h4>
+            <p>Shard, 31 St Thomas' Street, London SE1 9RY, UK</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6064412661!2d-0.4312429300397579!3d51.528607014696895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sph!4v1729118370823!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>United Kingdom (Edinburgh)</h4>
+            <p>88-32-1 Edinburgh EH1 1YY, UK</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71502.94469858747!2d-3.287739359195653!3d55.941276999529606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh%2C%20UK!5e0!3m2!1sen!2sph!4v1729118400488!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Canada</h4>
+            <p>351, M5V 3L9, Bremner Boulevard, Toronto, ON, Canada</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977187775!2d-79.54286890885199!3d43.71837095832167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sph!4v1729118445039!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Bahamas</h4>
+            <p>4-53-89 Atlantis, Paradise Island, Nassau, Bahamas</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231362.43891776045!2d-77.57190774286143!3d25.03278077834182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c99b981dbc9%3A0x2aef01d3485e50d2!2sNassau%2C%20The%20Bahamas!5e0!3m2!1sen!2sph!4v1729118486519!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>Costa Rica</h4>
+            <p>637-19-05 Avenida 2, Calle 3, San José, Costa Rica</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.678875052334!2d-84.15454510191984!3d9.935627678618186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50d15c5%3A0xe6746a6a9f11b882!2sSan%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1sen!2sph!4v1729118553656!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>USA (California)</h4>
+            <p>300 - 90071 South Grand Avenue, Los Angeles, CA, USA</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442028474!2d-118.74139510828452!3d34.02060844856616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sph!4v1729118580272!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>USA (Florida)</h4>
+            <p>88 - 33 - 130 SW 8th St, Miami, FL, USA</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567680589!2d-80.31186081218331!3d25.782538874229818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL%2C%20USA!5e0!3m2!1sen!2sph!4v1729118632711!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>USA (Washington D.C.)</h4>
+            <p>
+              International Hotel Washington D.C., 1100 16th St NW, DC 20036,
+              Washington, USA
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.17535635657!2d-77.1793880338295!3d38.89390590039422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sph!4v1729118671927!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="office-card">
+            <h4>USA (New York)</h4>
+            <p>285 Fulton St, NY 10007, New York, USA</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03612665756!2d-74.30933735295913!3d40.6975399535081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sph!4v1729118690447!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <button id="back-to-top" onclick="scrollToTop()">↑</button>
+  <footer>
+    <ul>
+      <li>
+        <a
+          href="https://www.facebook.com/share/4icqxLeV1SAVbjSh/"
+          target="_blank"
+          ><img src="website2 elements/Facebook.png" alt="Facebook"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.instagram.com/furr_eli/profilecard/?igsh=MW92NXVha2ZwYjVvbw=="
+          target="_blank"
+          ><img src="website2 elements/Instagram.png" alt="Instagram"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="Take a look at Rosè 💗💗 (@Jade____Queen): https://x.com/Jade____Queen?t=DzPx8xV1JGPBlZ6lRhJv5Q&s=07"
+          target="_blank"
+          ><img src="website2 elements/X.png" alt="X"
+        /></a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank"
+          ><img src="website2 elements/LinkedIn.png" alt="LinkedIn"
+        /></a>
+      </li>
+
+      <li><a href="term.htm" target="_blank">Terms of Services</a></li>
+      <li><a href="privacy.htm" target="_blank">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">
+      Copyright &#169; 2024 Golden Crown Real-Estate Co. & Gania, Elisha Claire
+      A. All rights reserved.
+    </p>
+  </footer>
+</html>

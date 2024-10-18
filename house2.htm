@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golden Crown Real-Estate Co.</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link rel="stylesheet" href="css/style2.css" type="text/css" />
+    <script src="js/script1.js" defer></script>
+    <script src="js/script2.js" defer></script>
+  </head>
+
+  <header>
+    <div class="language-selector">
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English (Default)</option>
+        <option value="tl">Filipino (Philippines)</option>
+        <option value="jp">Japanese (Japan)</option>
+        <option value="kr">Korean (South Korea)</option>
+        <option value="ar">Arabic (Saudi Arabia)</option>
+        <option value="th">Thai (Thailand)</option>
+        <option value="fr">French (France, Switzerland)</option>
+        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+        <option value="it">Italian (Italy)</option>
+        <option value="en-gb">English (UK: London, Edinburgh)</option>
+        <option value="en-us">
+          English (USA: California, Florida, Washington D.C., New York)
+        </option>
+        <option value="fr-ca">French (Canada)</option>
+      </select>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.htm" data-translate="home">HOME</a></li>
+        |
+        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+        |
+        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+        |
+        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+        |
+        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <button id="back-button" onclick="goBack()">← Back</button>
+  </header>
+
+  <body>
+    <main class="the-countries">
+      <h2>Available Countries in Each Continent</h2>
+      <div class="continent-container"></div>
+      <div class="asian-countries" id="asian-countries">
+        <ul>
+          <li>
+            <div class="countries">
+              <a
+                href="housetypes.htm"
+                onclick="setSelectedCountryAndHouseType('Philippines', '')"
+              >
+                <img
+                  src="website2 elements/metromanila.jpg"
+                  alt="Philippines"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Philippines</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/tokyo_japan.jpg"
+                  alt="Japan"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Japan</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/Seoul.jpeg"
+                  alt="South Korea"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">South Korea</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a
+                href="housetypes.htm"
+                onclick="setSelectedCountryAndHouseType('Thailand', '')"
+              >
+                <img
+                  src="website2 elements/bangkok.jpeg"
+                  alt="Thailand"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Thailand</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/riyadh.jpg"
+                  alt="Saudi Arabia"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Saudi Arabia</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="europe-countries" id="europe-countries">
+        <ul>
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/paris_france.jpg"
+                  alt="France"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">France</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a
+                href="housetypes.htm"
+                onclick="setSelectedCountryAndHouseType('Spain', '')"
+              >
+                <img
+                  src="website2 elements/madrid_spain.jpg"
+                  alt="Spain"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Spain</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/milan_italy.jpg"
+                  alt="Italy"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Italy</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/zurich_switzerland.jpg"
+                  alt="Switzerland"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">Switzerland</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a href="#">
+                <img
+                  src="website2 elements/london_uk.jpg"
+                  alt="United Kingdom (London)"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">United Kingdom (London)</p>
+              <p id="soon">SOON</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="countries">
+              <a
+                href="housetypes.htm"
+                onclick="setSelectedCountryAndHouseType('United Kingdom (Edinburgh)', '');"
+              >
+                <img
+                  src="website2 elements/edinburgh_uk.jpg"
+                  alt="United Kingdom (Edinburgh)"
+                  class="country-image"
+                />
+              </a>
+              <p class="text-overlay">United Kingdom (Edinburgh)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  <button id="back-to-top" onclick="scrollToTop()">↑</button>
+  <footer>
+    <ul>
+      <li>
+        <a
+          href="https://www.facebook.com/share/4icqxLeV1SAVbjSh/"
+          target="_blank"
+          ><img src="website2 elements/Facebook.png" alt="Facebook"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.instagram.com/furr_eli/profilecard/?igsh=MW92NXVha2ZwYjVvbw=="
+          target="_blank"
+          ><img src="website2 elements/Instagram.png" alt="Instagram"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="Take a look at Rosè 💗💗 (@Jade____Queen): https://x.com/Jade____Queen?t=DzPx8xV1JGPBlZ6lRhJv5Q&s=07"
+          target="_blank"
+          ><img src="website2 elements/X.png" alt="X"
+        /></a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank"
+          ><img src="website2 elements/LinkedIn.png" alt="LinkedIn"
+        /></a>
+      </li>
+
+      <li><a href="term.htm" target="_blank">Terms of Services</a></li>
+      <li><a href="privacy.htm" target="_blank">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">
+      Copyright &#169; 2024 Golden Crown Real-Estate Co. & Gania, Elisha Claire
+      A. All rights reserved.
+    </p>
+  </footer>
+</html>

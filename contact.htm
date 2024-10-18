@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golden Crown Real-Estate Co.</title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <script src="js/script1.js"></script>
+  </head>
+
+  <header>
+    <div class="language-selector">
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English (Default)</option>
+        <option value="tl">Filipino (Philippines)</option>
+        <option value="jp">Japanese (Japan)</option>
+        <option value="kr">Korean (South Korea)</option>
+        <option value="ar">Arabic (Saudi Arabia)</option>
+        <option value="th">Thai (Thailand)</option>
+        <option value="fr">French (France, Switzerland)</option>
+        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+        <option value="it">Italian (Italy)</option>
+        <option value="en-gb">English (UK: London, Edinburgh)</option>
+        <option value="en-us">
+          English (USA: California, Florida, Washington D.C., New York)
+        </option>
+        <option value="fr-ca">French (Canada)</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.htm" data-translate="home">HOME</a></li>
+        |
+        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+        |
+        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+        |
+        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+        |
+        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main class="the-form">
+      <div>
+        <form action="mailto:your_email@example.com" method="post">
+          <h2>Contact Us</h2>
+
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="form-control"
+              placeholder="e.g. Chloe"
+              required
+            />
+            <br /><br />
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-control"
+              placeholder="e.g. Spencer"
+              required
+            /><br /><br />
+          </div>
+
+          <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              class="form-control"
+              placeholder="e.g. +63996970021"
+              required
+            /><br /><br />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="e.g. chlospency@gmail.com"
+              required
+            /><br /><br />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="What are your Concerns?"
+              required
+            ></textarea
+            ><br /><br />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+
+      <div class="right-side">
+        <div class="newsletter">
+          <h2>Become an Imperial Member!</h2>
+          <p>
+            Indulge in the epitome of luxury and experience the royal lifestyle.
+            Subscribe to our newsletter for exclusive offers and updates.
+          </p>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="e.g. chlospency@gmail.com"
+              required
+            />
+            <a
+              href="signup.htm"
+              class="signup-button"
+              id="signup-button"
+              target="_blank"
+              >Sign Up</a
+            >
+          </div>
+          <br /><br />
+        </div>
+
+        <div class="icons">
+          <table>
+            <tr>
+              <th>
+                <img src="website2 elements/globe.png" alt="Globe Icon" />
+              </th>
+              <td>Tarlac City, Philippines</td>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="website2 elements/phone.png" alt="Phone Icon" />
+              </th>
+              <td>PH (+63): 09684659450</td>
+            </tr>
+
+            <tr>
+              <th><img src="website2 elements/mail.png" alt="Mail Icon" /></th>
+              <a href="jadequeen386@gmail.com"
+                ><td>GoldenCrownRECo.@gmail.com</td></a
+              >
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+  <button id="back-to-top" onclick="scrollToTop()">↑</button>
+  <footer>
+    <ul>
+      <li>
+        <a
+          href="https://www.facebook.com/share/4icqxLeV1SAVbjSh/"
+          target="_blank"
+          ><img src="website2 elements/Facebook.png" alt="Facebook"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.instagram.com/furr_eli/profilecard/?igsh=MW92NXVha2ZwYjVvbw=="
+          target="_blank"
+          ><img src="website2 elements/Instagram.png" alt="Instagram"
+        /></a>
+      </li>
+
+      <li>
+        <a
+          href="Take a look at Rosè 💗💗 (@Jade____Queen): https://x.com/Jade____Queen?t=DzPx8xV1JGPBlZ6lRhJv5Q&s=07"
+          target="_blank"
+          ><img src="website2 elements/X.png" alt="X"
+        /></a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank"
+          ><img src="website2 elements/LinkedIn.png" alt="LinkedIn"
+        /></a>
+      </li>
+
+      <li><a href="term.htm" target="_blank">Terms of Services</a></li>
+      <li><a href="privacy.htm" target="_blank">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">
+      Copyright &#169; 2024 Golden Crown Real-Estate Co. & Gania, Elisha Claire
+      A. All rights reserved.
+    </p>
+  </footer>
+</html>

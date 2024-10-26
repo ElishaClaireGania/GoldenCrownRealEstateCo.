@@ -122,6 +122,8 @@ select {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    height: 50vh; 
+    z-index: -5;
 }
 
 /* HEADINGS OVERLAPPING THE HERO IMAGE */
@@ -141,7 +143,7 @@ select {
 
 /* H1 - Positioned near the top */
 .hero-section h1 {
-    top: 50%; 
+    top: 31%; 
     font-size: 2.5rem;
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
@@ -150,7 +152,7 @@ select {
 
 /* H2 - Positioned slightly lower */
 .hero-section h2 {
-    top: 24%; 
+    top: 13%; 
     font-size: 1.8rem;
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
@@ -1024,7 +1026,7 @@ th img {
         padding: 0;
         position: relative;
         overflow: hidden;
-        height: 50vh; 
+        height: 30vh; 
         z-index: -5;
     }
 
@@ -1051,20 +1053,18 @@ th img {
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
     }
  
-    /* H1 - Positioned near the top */
-    .hero-section h1 {
-        top: 25%; 
-        font-size: 1.2rem; 
+     .hero-section h1 {
+        top: 23%; 
+        font-size: 0.75rem; 
         background: rgba(0, 0, 0, 0.5); 
         border-radius: 10px;
         padding: 0;
         margin: 0;
     }
  
-    /* H2 - Positioned slightly lower */
     .hero-section h2 {
-        top: 17%; 
-        font-size: 1rem; 
+        top: 13%; 
+        font-size: 0.25rem; 
         background: rgba(0, 0, 0, 0.5); 
         border-radius: 10px;
         padding: 0;
@@ -1231,6 +1231,7 @@ th img {
     }
 }
 
+
 /* TABLET VIEWPORT */
 /* VIEWPORT 1 */
 @media (max-width: 768px) {  
@@ -1365,7 +1366,6 @@ th img {
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
     }
  
-    /* H1 - Positioned near the top */
      .hero-section h1 {
         top: 37%; 
         font-size: 1.8rem; 
@@ -1375,7 +1375,6 @@ th img {
         margin: 0;
     }
  
-    /* H2 - Positioned slightly lower */
     .hero-section h2 {
         top: 17%; 
         font-size: 1.3rem; 
@@ -1520,130 +1519,6 @@ th img {
     button {
         font-size: 0.9rem;
         padding: 12px 20px; 
-    }
-
-    /* FEATURED PROPERTIES SECTION */
-    .featured-properties {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        padding: 0;
-        gap: 20px; 
-    }
-
-    /* PROPERTY ITEM */
-    .featured-properties li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        width: 100%; 
-        max-width: 380px; 
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    /* IMAGE STYLING */
-    .featured-properties li img {
-        width: 180px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 12px;
-        border: 3px solid var(--heading-footer-linkcolor);
-        margin: 5px;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    /* HOUSE NAME STYLING */
-    .house-name {
-        font-size: 1.6rem;
-        font-weight: bold;
-        color: var(--heading-footer-linkcolor);
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-    /* HOVER EFFECTS */
-    .featured-properties li:hover {
-        transform: scale(1.1);
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
-    }
-
-    .featured-properties li img:hover {
-        transform: scale(1.15);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
-    }
-
-    .index-p-styling {
-        font-size: 1rem; 
-        line-height: 1.5; 
-        color: #FFFFFF;
-        text-align: justify;
-        padding: 15px 20px; 
-        background: linear-gradient(180deg, black, #4A39AE, #6b5cb0);
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 600px; 
-        margin: 0 auto 20px auto; 
-    }
-    
-    .index-p-styling:hover {
-        transform: scale(1.01); 
-        cursor: pointer;
-        background-color: #000 !important;
-    }
-
-    .services-list {
-        list-style: none;
-        padding: 0;
-        max-width: 400px; 
-        margin: 0 auto;
-    }
-    
-    .services-list h4, .terms h4, .policy h4 {
-        font-size: 1.4rem; 
-        color: #FFD700;
-        margin-bottom: 10px;
-    }
-    
-    .services-list ol, .terms ol, .policy ol {
-        padding-left: 20px;
-        color: white;
-    }
-    
-    .services-list p {
-        font-size: 1rem; 
-        line-height: 1.4; 
-        color: white;
-    }
-    
-    .services-list span {
-        font-weight: bold;
-    }
-    
-    .services-list li {
-        margin-bottom: 20px; 
-        background: #6b5cb0;
-        padding: 15px; 
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: background 0.3s, transform 0.3s;
-    }
-    
-    .services-list li:hover {
-        transform: scale(1.01); 
-        cursor: pointer;
-        background: linear-gradient(180deg,#6b5cb0, #4A39AE, #FFD700);
-    }
-
-    span {
-        color: var(--heading-footer-linkcolor);
     }
 
     /* HOUSE PAGE */

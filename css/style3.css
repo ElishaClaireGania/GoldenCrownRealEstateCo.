@@ -1,0 +1,140 @@
+/* Default Desktop Layout */
+.sign-in {
+    background-color: #4A39AE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.the-sign-up {
+    width: 100%;
+    max-width: 700px; 
+    background: linear-gradient(127deg, #4A39AE, #5f4ebb, #FFD700);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+    border-bottom: #FFD700 solid 5px;
+}
+
+.the-sign-up label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.the-sign-up input[type="text"],
+.the-sign-up input[type="email"],
+.the-sign-up input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #4A39AE;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.the-sign-up input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.the-sign-up button {
+    background-color: #4A39AE;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.the-sign-up button:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+.the-sign-up .login-link {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.the-sign-up .login-link a {
+    color: #4A39AE;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A39AE; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Phone View */
+@media (max-width: 480px) {
+    .the-sign-up {
+        max-width: 90%; 
+        padding: 15px; 
+    }
+
+    .signup-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .the-sign-up button {
+        padding: 8px;
+        font-size: 0.9rem; 
+    }
+
+    .the-sign-up input[type="text"],
+    .the-sign-up input[type="email"],
+    .the-sign-up input[type="password"] {
+        padding: 8px;
+        font-size: 0.9rem; 
+    }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .the-sign-up {
+        max-width: 90%; 
+        padding: 20px;
+    }
+
+    .signup-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .the-sign-up button {
+        padding: 9px;
+        font-size: 1rem;
+    }
+
+    .the-sign-up input[type="text"],
+    .the-sign-up input[type="email"],
+    .the-sign-up input[type="password"] {
+        padding: 9px;
+    }
+}

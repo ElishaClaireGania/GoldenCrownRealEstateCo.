@@ -271,8 +271,8 @@
     }
 }
 
-
-/* BIG SCREEN PHONE VIEW */
+/* TABLET VIEW */
+/* VIEWPORT 1 */
 @media (max-width: 768px) {
     /* HOUSES 2 PAGE */
     .countries {
@@ -331,8 +331,8 @@
 }
 
 
-/* TABLET VIEW */
-@media (min-width: 601px) and (max-width: 900px) {
+/* VIEWPORT 2 */
+@media (min-width: 769px) and (max-width: 900px) {
     /* HOUSE 2 PAGE */
     .countries {
         flex: 1 1 calc(50% - 20px); 

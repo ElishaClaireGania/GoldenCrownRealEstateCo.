@@ -923,7 +923,7 @@ th img {
 /* SMALL SCREEN PHONE VIEW */
 @media (min-width: 320px) and (max-width: 480px) {
     h1, h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     /* LANGUAGE SELECTOR */
@@ -1054,7 +1054,7 @@ th img {
     /* H1 - Positioned near the top */
     .hero-section h1 {
         top: 25%; 
-        font-size: 1.4rem; 
+        font-size: 1.2rem; 
         background: rgba(0, 0, 0, 0.5); 
         border-radius: 10px;
         padding: 0;
@@ -1231,8 +1231,8 @@ th img {
     }
 }
 
-
-/* BIG SCREEN PHONE VIEW */
+/* TABLET VIEWPORT */
+/* VIEWPORT 1 */
 @media (max-width: 768px) {  
     h1, h2 {
         font-size: 1.4rem;
@@ -1847,8 +1847,8 @@ th img {
 
 
 
-/* TABLET VIEW */
-@media (min-width: 601px) and (max-width: 900px) {
+/* VIEWPORT 2 */
+@media (min-width: 769px) and (max-width: 900px) {
     .navbar {
         display: none;
     }

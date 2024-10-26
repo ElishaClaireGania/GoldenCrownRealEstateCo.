@@ -83,19 +83,19 @@
 }
 
 .the-housetypes ul {
-    display: flex;                /* Use flexbox for layout */
-    flex-wrap: wrap;             /* Allow wrapping of items */
-    gap: 30px;                   /* Space between items */
-    list-style: none;            /* Remove default list styling */
-    padding-left: 10%;           /* Left padding */
-    margin: 0;                   /* Reset margin */
+    display: flex;                
+    flex-wrap: wrap;            
+    gap: 30px;                   
+    list-style: none;            
+    padding-left: 10%;           
+    margin: 0;                   
 }
 
 .the-housetypes li {
     position: relative;
-    flex: 1 1 calc(30% - 20px);  /* Default item width */
-    max-width: 300px;            /* Maximum width for items */
-    margin-bottom: 30px;         /* Space below each item */
+    flex: 1 1 calc(30% - 20px);  
+    max-width: 300px;            
+    margin-bottom: 30px;         
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
@@ -104,8 +104,8 @@
 }
 
 .the-housetypes li:hover {
-    transform: scale(1.07);      /* Scale up on hover */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transform: scale(1.07);      
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); 
     cursor: pointer;
 }
 
@@ -121,8 +121,6 @@
     flex: 1 1 calc(50% - 0px);   
     margin-bottom: 0;            
 }
-
-
 
 
 /* HOUSE EXTERIOR PAGE */
@@ -215,8 +213,32 @@
 
 /* Responsive behavior */
 @media (max-width: 768px) {
-.house-image-container li {
-        width: calc(50% - 20px);
+    /* HOUSES 2 PAGE */
+    .countries {
+        flex: 1 1 calc(100% - 20px); 
+        max-width: 250px;
+        margin-bottom: 20px; 
+    }
+    
+    #asian-countries ul, 
+    #europe-countries ul {
+        gap: 15px; 
+    }
+
+    .country-image {
+        border-radius: 3%;
+    }
+
+
+    /* HOUSE TYPES PAGE  */
+    .the-housetypes h2, .the-countries h2 {
+        font-size: 2rem; 
+    }
+
+    .the-housetypes li {
+        flex: 1 1 100%; 
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
     .the-housetypes ul li {
@@ -228,25 +250,78 @@
         justify-content: center;    
     }
 
-    .house-image-container img {
-        max-height: 120px; 
-    }
+    .the-housetypes li img {
+        height: 200px; 
+    } 
 
-    
-}
-
-@media (max-width: 480px) {
-    .the-housetypes ul li {
-        flex: 1 1 100%; 
+    /* HOUSE EXTERIOR PAGE */
+    .house-exterior {
+        padding: 30px 3%;
     }
 
     .house-image-container li {
         width: 100%; 
+        margin: 10px 0; 
     }
-   
+
     .house-image-container img {
-        max-height: 100px; 
+        height: 200px; 
     }
+}
+
+
+/* TABLET VIEW */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* HOUSE 2 PAGE */
+    .countries {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: 275px;
+    }
+
+    #asian-countries ul, 
+    #europe-countries ul {
+        gap: 20px; 
+    }
+
+    .country-image {
+        border-radius: 12%;
+    }
+
+
+    /* HOUSE TYPES PAGE */
+    .the-housetypes h2, .the-countries h2 {
+        font-size: 2.3rem;
+    }
+
+    .the-housetypes ul {
+        padding-left: 7%; 
+        gap: 25px; 
+    }
+
+    .the-housetypes li {
+        flex: 1 1 calc(45% - 20px); /* Two items per row */
+        max-width: 45%; 
+        margin-bottom: 25px;
+    }
+
+    .the-housetypes li img {
+        height: 220px;
+    }
+
+
+    /* HOUSE EXTERIOR PAGE */
+    .house-exterior {
+        padding: 40px 4%;
+    }
+
+    .house-image-container li {
+        width: calc(50% - 20px); 
+    }
+
+    .house-image-container img {
+        height: 220px; 
+    }
+
 }
 
 

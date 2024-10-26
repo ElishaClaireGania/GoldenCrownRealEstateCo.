@@ -4,47 +4,68 @@
     <meta charset="UTF-8" />
     <title>Golden Crown Real-Estate Co.</title>
     <link rel="stylesheet" href="css/style1.css" />
-    <script src="js/script1.js"></script>
+    <script src="js/script1.js" defer></script>
   </head>
 
-  <header>
-    <div class="language-selector">
-      <select id="language" onchange="changeLanguage(this.value)">
-        <option value="en">English (Default)</option>
-        <option value="tl">Filipino (Philippines)</option>
-        <option value="jp">Japanese (Japan)</option>
-        <option value="kr">Korean (South Korea)</option>
-        <option value="ar">Arabic (Saudi Arabia)</option>
-        <option value="th">Thai (Thailand)</option>
-        <option value="fr">French (France, Switzerland)</option>
-        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
-        <option value="it">Italian (Italy)</option>
-        <option value="en-gb">English (UK: London, Edinburgh)</option>
-        <option value="en-us">
-          English (USA: California, Florida, Washington D.C., New York)
-        </option>
-        <option value="fr-ca">French (Canada)</option>
-      </select>
-    </div>
-    <br />
-    <br />
-
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.htm" data-translate="home">HOME</a></li>
-        |
-        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
-        |
-        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
-        |
-        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
-        |
-        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
+    <header>
+      <div class="language-selector">
+        <select id="language" onchange="changeLanguage(this.value)">
+          <option value="en">English (Default)</option>
+          <option value="tl">Filipino (Philippines)</option>
+          <option value="jp">Japanese (Japan)</option>
+          <option value="kr">Korean (South Korea)</option>
+          <option value="ar">Arabic (Saudi Arabia)</option>
+          <option value="th">Thai (Thailand)</option>
+          <option value="fr">French (France, Switzerland)</option>
+          <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+          <option value="it">Italian (Italy)</option>
+          <option value="en-gb">English (UK: London, Edinburgh)</option>
+          <option value="en-us">
+            English (USA: California, Florida, Washington D.C., New York)
+          </option>
+          <option value="fr-ca">French (Canada)</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <!-- NAVBAR DESKTOP MENU -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.htm" data-translate="home">HOME</a></li>
+          |
+          <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+          |
+          <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+          |
+          <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+          |
+          <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- HAMBURGER MENU -->
+      <div>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="hamburger" id="hamburger">
+          <ul>
+            <li><a href="index.htm" data-translate="home">HOME</a></li>
+            <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+            <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+            <li>
+              <a href="location.htm" data-translate="location">LOCATION</a>
+            </li>
+            <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <div class="about-heading">
         <h3 class="heading" id="heading">Company History</h3>
@@ -134,8 +155,10 @@
             <div class="middle">
               <li class="ceo">
                 <img src="website2 elements/Me.jpg" alt="CEO Image" />
-                <p class="member-description">
-                  <span>CEO/Founder of Golden Crown Real-Estate Co.</span>
+                <p>
+                  <span class="member-description"
+                    >CEO/Founder of Golden Crown Real-Estate Co.</span
+                  >
                 </p>
               </li>
             </div>
@@ -148,8 +171,10 @@
                 src="website2 elements/eonnie.jpg"
                 alt="Real Estate Manager Image"
               />
-              <p class="member-description">
-                <span>Real Estate Manager of Golden Crown Real-Estate Co.</span>
+              <p>
+                <span class="member-description"
+                  >Real Estate Manager of Golden Crown Real-Estate Co.</span
+                >
               </p>
             </li>
             <br />
@@ -159,8 +184,8 @@
                 src="website2 elements/Shane.jpg"
                 alt="Foreclosure Specialist Image"
               />
-              <p class="member-description">
-                <span
+              <p>
+                <span class="member-description"
                   >Foreclosure Specialist of Golden Crown Real-Estate Co.</span
                 >
               </p>
@@ -172,8 +197,10 @@
                 src="website2 elements/Kim.jpg"
                 alt="Property Manager Image"
               />
-              <p class="member-description">
-                <span>Property Manager of Golden Crown Real-Estate Co.</span>
+              <p>
+                <span class="member-description"
+                  >Property Manager of Golden Crown Real-Estate Co.</span
+                >
               </p>
             </li>
             <br />
@@ -183,8 +210,10 @@
                 src="website2 elements/Raiza.jpg"
                 alt="Leasing Consultant Image"
               />
-              <p class="member-description">
-                <span>Leasing Consultant of Golden Crown Real-Estate Co.</span>
+              <p>
+                <span class="member-description"
+                  >Leasing Consultant of Golden Crown Real-Estate Co.</span
+                >
               </p>
             </li>
             <br />
@@ -194,8 +223,10 @@
                 src="website2 elements/Aries.jpg"
                 alt="Title Examiner Image"
               />
-              <p class="member-description">
-                <span>Title Examiner of Golden Crown Real-Estate Co.</span>
+              <p>
+                <span class="member-description"
+                  >Title Examiner of Golden Crown Real-Estate Co.</span
+                >
               </p>
             </li>
             <br />
@@ -205,8 +236,10 @@
                 src="website2 elements/Darlene.jpg"
                 alt="Leasing Agent Image"
               />
-              <p class="member-description">
-                <span>Leasing Agent of Golden Crown Real-Estate Co.</span>
+              <p>
+                <span class="member-description"
+                  >Leasing Agent of Golden Crown Real-Estate Co.</span
+                >
               </p>
             </li>
             <br />

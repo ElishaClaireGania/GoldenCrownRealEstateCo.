@@ -148,15 +148,13 @@ function goBack() {
 
 
 // HAMBURGER MENU
+const menuToggle = document.getElementById('menu-toggle');
+const hamburger = document.querySelector('.hamburger');
 
-
-
-
-
-
-
-
-
+menuToggle.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
 
 
 

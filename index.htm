@@ -8,64 +8,85 @@
     <script src="js/script1.js" defer></script>
   </head>
 
-  <header>
-    <div class="language-selector">
-      <select id="language" onchange="changeLanguage(this.value)">
-        <option value="en">English (Default)</option>
-        <option value="tl">Filipino (Philippines)</option>
-        <option value="jp">Japanese (Japan)</option>
-        <option value="kr">Korean (South Korea)</option>
-        <option value="ar">Arabic (Saudi Arabia)</option>
-        <option value="th">Thai (Thailand)</option>
-        <option value="fr">French (France, Switzerland)</option>
-        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
-        <option value="it">Italian (Italy)</option>
-        <option value="en-gb">English (UK: London, Edinburgh)</option>
-        <option value="en-us">
-          English (USA: California, Florida, Washington D.C., New York)
-        </option>
-        <option value="fr-ca">French (Canada)</option>
-      </select>
-    </div>
-    <br />
-    <br />
-
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.htm" data-translate="home">HOME</a></li>
-        |
-        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
-        |
-        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
-        |
-        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
-        |
-        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
-    <main>
+    <header>
+      <div class="language-selector">
+        <select id="language" onchange="changeLanguage(this.value)">
+          <option value="en">English (Default)</option>
+          <option value="tl">Filipino (Philippines)</option>
+          <option value="jp">Japanese (Japan)</option>
+          <option value="kr">Korean (South Korea)</option>
+          <option value="ar">Arabic (Saudi Arabia)</option>
+          <option value="th">Thai (Thailand)</option>
+          <option value="fr">French (France, Switzerland)</option>
+          <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+          <option value="it">Italian (Italy)</option>
+          <option value="en-gb">English (UK: London, Edinburgh)</option>
+          <option value="en-us">
+            English (USA: California, Florida, Washington D.C., New York)
+          </option>
+          <option value="fr-ca">French (Canada)</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <!-- NAVBAR DESKTOP MENU -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.htm" data-translate="home">HOME</a></li>
+          |
+          <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+          |
+          <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+          |
+          <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+          |
+          <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- HAMBURGER MENU -->
+      <div>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="hamburger" id="hamburger">
+          <ul>
+            <li><a href="index.htm" data-translate="home">HOME</a></li>
+            <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+            <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+            <li>
+              <a href="location.htm" data-translate="location">LOCATION</a>
+            </li>
+            <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="behind">
       <div class="hero-section" id="hero-section">
         <img
           src="website2 elements/hero image.png"
           alt="Main House Image"
           class="hero-image"
         />
+        <h2>Your Destination for Luxury Living</h2>
         <h1>
           Indulge in the Imperial, A Royal Retreat where Elegance Reigns Supreme
         </h1>
-        <h2>Your Destination for Luxury Living</h2>
       </div>
       <br /><br />
 
       <div>
         <h3 class="heading">Mission</h3>
         <p class="index-p-styling">
-          Golden Crown Real Estate Co. is committed to providing exceptional
-          real estate services on a global scale. Our mission is to offer
-          clients the highest quality homes and apartments, combined with
+          <span>Golden Crown Real Estate Co.</span> is committed to providing
+          exceptional real estate services on a global scale. Our mission is to
+          offer clients the highest quality homes and apartments, combined with
           unparalleled customer service and a dedication to excellence. We
           strive to create lasting relationships with our clients by exceeding
           their expectations and contributing to the vibrant growth of
@@ -75,7 +96,7 @@
 
         <h3 class="heading">Vision</h3>
         <p class="index-p-styling">
-          Golden Crown Real Estate Co. envisions becoming a leading
+          <span>Golden Crown Real Estate Co.</span> envisions becoming a leading
           international real estate firm, renowned for its integrity,
           professionalism, and commitment to delivering exceptional value to
           clients across the globe. We aim to be a trusted partner in helping

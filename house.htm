@@ -8,44 +8,65 @@
     <script src="js/script2.js" defer></script>
   </head>
 
-  <header>
-    <div class="language-selector">
-      <select id="language" onchange="changeLanguage(this.value)">
-        <option value="en">English (Default)</option>
-        <option value="tl">Filipino (Philippines)</option>
-        <option value="jp">Japanese (Japan)</option>
-        <option value="kr">Korean (South Korea)</option>
-        <option value="ar">Arabic (Saudi Arabia)</option>
-        <option value="th">Thai (Thailand)</option>
-        <option value="fr">French (France, Switzerland)</option>
-        <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
-        <option value="it">Italian (Italy)</option>
-        <option value="en-gb">English (UK: London, Edinburgh)</option>
-        <option value="en-us">
-          English (USA: California, Florida, Washington D.C., New York)
-        </option>
-        <option value="fr-ca">French (Canada)</option>
-      </select>
-    </div>
-    <br />
-    <br />
-
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.htm" data-translate="home">HOME</a></li>
-        |
-        <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
-        |
-        <li><a href="about.htm" data-translate="about">ABOUT</a></li>
-        |
-        <li><a href="location.htm" data-translate="location">LOCATION</a></li>
-        |
-        <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
+    <header>
+      <div class="language-selector">
+        <select id="language" onchange="changeLanguage(this.value)">
+          <option value="en">English (Default)</option>
+          <option value="tl">Filipino (Philippines)</option>
+          <option value="jp">Japanese (Japan)</option>
+          <option value="kr">Korean (South Korea)</option>
+          <option value="ar">Arabic (Saudi Arabia)</option>
+          <option value="th">Thai (Thailand)</option>
+          <option value="fr">French (France, Switzerland)</option>
+          <option value="es">Spanish (Spain, Bahamas, Costa Rica)</option>
+          <option value="it">Italian (Italy)</option>
+          <option value="en-gb">English (UK: London, Edinburgh)</option>
+          <option value="en-us">
+            English (USA: California, Florida, Washington D.C., New York)
+          </option>
+          <option value="fr-ca">French (Canada)</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <!-- NAVBAR DESKTOP MENU -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.htm" data-translate="home">HOME</a></li>
+          |
+          <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+          |
+          <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+          |
+          <li><a href="location.htm" data-translate="location">LOCATION</a></li>
+          |
+          <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- HAMBURGER MENU -->
+      <div>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="hamburger" id="hamburger">
+          <ul>
+            <li><a href="index.htm" data-translate="home">HOME</a></li>
+            <li><a href="house.htm" data-translate="houses">HOUSES</a></li>
+            <li><a href="about.htm" data-translate="about">ABOUT</a></li>
+            <li>
+              <a href="location.htm" data-translate="location">LOCATION</a>
+            </li>
+            <li><a href="contact.htm" data-translate="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <h2 style="text-align: center" class="heading">Available Continents</h2>
       <div class="continent-container">
